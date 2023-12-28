@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+} body {
+    background-color: #f3e9ff;
+    padding: 50px 250px;
+} .bold {
+    font-weight: bolder;
+} .indent {
+    margin-left: 21.5px;
+    margin-top: 1.15rem;
+}
+
+header, main, footer {
+    width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    color: #5730c6;
+}
+
+header img {
+    width: 450px;
+    height: 250px;
+    aspect-ratio: 16/9;
+}
+
+main {
+    padding: 40px 30px;
+    margin-block: 6rem;
+    border-radius: 10px;
+    background-color: #774ad8;
+    color: #faf1fe;
+} main h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+} #html-summary {
+    margin-bottom: 1.5rem;
+} section > p {
+    font-size: 1.5rem;
+    font-weight: 400;
+} 
+
+section ul {
+    list-style-type: square;
+    list-style-position: inside;
+    font-size: 1.3rem;
+    margin-block: 1.15rem;
+    font-weight: 400;
+}
+
+section ul li {
+    margin-top: 1.15rem;
+    color: #f7d354;
+}
+
+section a {
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: #401e52;
+    text-decoration: none;
+    background-color: #fae9b2;
+}
+
+footer{
+    text-align: center;
+} footer a {
+    padding: 8px 20px;
+    font-size: 1.75rem;
+    text-decoration: none;
+    color: #584202;
+    font-weight: bold;
+    background-color: #f9c927;
+    border-radius: 10px;
+} footer p {
+    margin-top: 2rem;
+    color: #80728c;
+    font-size: 1.5rem;
+}
