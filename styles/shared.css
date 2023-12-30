@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&family=Righteous&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    min-width: 980px;
+    height: max-content;
+}
+
+header {
+    width: 100%;
+    min-width: 980px;
+    height: fit-content;
+    padding: 15px 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+#website-logo {
+    width: fit-content;
+    min-width: 461px;
+} header h1 a {
+    text-decoration: none;
+    font-family: 'Righteous', sans-serif;
+    text-shadow: 2px 1px 1px black;
+    letter-spacing: 2px;
+    color: #ece7bf;
+    text-transform: uppercase;
+} 
+
+header nav {
+    width: 20%;
+    min-width: 200px;
+} header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}  header nav ul li a {
+    text-decoration: none;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+} header nav ul li a:link {
+    color: #ece7bf;
+} header nav ul li a:visited {
+    color: #ece7bf;
+} header nav ul li a:hover {
+    color: #61d1bb;
+} 
+
+footer {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(25, 23, 23);
+    color: whitesmoke;
+    font-size: 3rem;
+} footer .fa {
+    margin-inline: 2rem;
+}
