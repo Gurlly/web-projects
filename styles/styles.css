@@ -1,0 +1,152 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+/*Fonts Imports:
+Title: font-family: 'Lilita One', sans-serif;
+Text: font-family: 'Exo 2', sans-serif;
+*/
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #282522;
+}
+
+/*Header Styles*/
+header {
+    width: 100%;
+    height: max-content;
+    padding: 1.2rem 2rem;
+    background-color: #1c1919;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} #title {
+    color: #f29c41;
+    font-family: 'Lilita One', sans-serif;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+} header ul {
+    display: flex;
+    list-style: none;
+} header ul li {
+    margin-inline: 1.5rem;
+} header ul li a {
+    font-size: 1.15rem;
+    font-family: 'Exo 2', sans-serif;
+    text-decoration: none;
+} header ul li a:link {
+    color: #aa762c;
+} header ul li a:visited {
+    color: #aa762c;
+} header ul li a:hover {
+    font-weight: bold;
+} header ul li a:focus {
+    color: #b1301d;
+    font-weight: bold;
+} 
+
+/*Side button Drawer*/
+#nav-bar, #back {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+} #back {
+    display: block;
+}
+
+#side-drawer {
+    width: 100vw;
+    height: 100vh;
+    padding: 1.5rem;
+    background-color: #1c1919;
+    position: fixed;
+    top: 0;
+    display: none;
+} #side-drawer:target {
+    display: block;
+}
+
+#side-drawer ul {
+    list-style: none;
+} #side-drawer ul li {
+    width: max-content;
+    margin: 0 auto;
+    margin-block: 1.15rem;
+} #side-drawer ul li a {
+    font-size: 1.15rem;
+    font-family: 'Exo 2', sans-serif;
+    text-decoration: none;
+    color: #e3d6c8;
+} #side-drawer ul li a:hover {
+    font-weight: bold;
+    color: #b1301d;
+}
+
+/*Main Styles*/
+main {
+    width: 100%;
+    height: 100%;
+    padding-block: 3.2rem; 
+} main h2 {
+    width: fit-content;
+    margin: 0 auto 4.5rem auto;
+    font-size: 2.5rem;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    color: #f29c41;
+} #meals {
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+} #meals figure {
+    width: 100%;
+    height: max-content;
+    margin-inline: 2rem;
+    border-radius: 10px;
+    background-color: #e4c8ad;
+    cursor: pointer;
+    overflow: hidden;
+} #meals figure img {
+    width: 100%;
+    height: 15.5rem;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;  
+} #meals figure figcaption {
+    padding: 1rem;
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+} .meal-name {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #3b3228;
+} .add-to-cart {
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.15rem;
+    background-color: #e99322;
+    color: #fbeec9;
+} .add-to-cart:hover {
+    color: #3b3228;
+}
+
+

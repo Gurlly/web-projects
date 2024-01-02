@@ -1,0 +1,32 @@
+@media (max-width: 850px) {
+    body {
+        overflow: scroll;
+    } 
+    
+    main {
+        height: fit-content;
+    }
+
+    #meals {
+        flex-wrap: wrap;
+    } main h2 {
+        margin-bottom: 3rem;
+    } #meals figure {
+        margin-block: 1rem;
+    }
+}
+
+@media (max-width: 610px) {
+    header nav {
+        display: none;
+    } #nav-bar {
+        display: block;
+    } 
+
+    main h2 {
+        font-size: 2rem;
+
+    } #meals {
+        width: 80%;
+    } 
+}
