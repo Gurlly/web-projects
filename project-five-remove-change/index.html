@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Exercise</title>
+
+    <link rel="stylesheet" href="/project-five-remove-change/styles/styles.css" />
+    <script src="/project-five-remove-change/script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            Advanced 
+            <span class="dark">Java</span><span class="yellow">Script</span>
+        </h1>
+        <p>Working with DOM - Exercise</p>
+    </header>
+
+    <main>
+        <h2>Why JavaScript?</h2>
+        <div id="change-to-blue">
+            <p>
+                JavaScript is a programming language, which can be executed 
+                by the browser, after the page was loaded.
+            </p>
+            <p>
+                With JavaScript, you, as a developer, can access, read, and manipulate
+                the parsed HTML code ("the DOM") to add additional behavior and features to the page.
+            </p>
+        </div>
+        
+        <!--Container for the functions-->
+        <div>
+            <p id="paragraph-to-remove" class="paragraph">
+                For Example, you can make remove this paragraph by clicking the <strong>button</strong> below.
+            </p>
+            <button id="remove">Remove Paragraph</button>
+            <p class="blue">
+                Or take the next button: it adds a blue background to the first paragraph
+            </p>
+            <button id="add-background">Add Blue Background Color</button>
+        </div>
+    </main>
+</body>
+</html>
