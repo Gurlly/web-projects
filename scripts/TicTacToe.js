@@ -51,6 +51,7 @@ start.addEventListener("click", () => {
   gameContainer.style.display = "block";
   gameResult.style.display = "none";
   boxSelected = 0;
+  playerTurnName.textContent = playerOne.textContent;
 
   // Sets all row values to random numbers greater than 2
   for (let i = 0; i < rows.length; i++) {
