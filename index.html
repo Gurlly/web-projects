@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link rel="icon" href="/resources/favicon.ico" type="image/x-icon" />
+
+    <!--CSS style-->
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <!--Scripts-->
+    <script src="/scripts/script.js" defer></script>
+    <script src="/scripts/TicTacToe.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>TicTacToe</h1>
+      <p>
+        Navigate the Grid, Outsmart Your Foe. 'Strategic Grid Duel' — Where
+        Tic-Tac-Toe Gets Tactical!
+      </p>
+    </header>
+
+    <main>
+      <!--Header and Player Information-->
+      <section>
+        <div id="player-details">
+          <div class="player-info">
+            <h3>Player 1</h3>
+            <h2 id="player-one">Player Name</h2>
+            <h4 class="symbol">X</h4>
+            <a href="#input-name" class="edit-name" id="change-name-one"
+              >Edit</a
+            >
+          </div>
+          <div class="player-info">
+            <h3>Player 2</h3>
+            <h2 id="player-two">Player Name</h2>
+            <h4 class="symbol">O</h4>
+            <a href="#input-name" class="edit-name" id="change-name-two"
+              >Edit</a
+            >
+          </div>
+        </div>
+        <button id="start-game">Start New Game</button>
+      </section>
+
+      <!--Enter name: Working-->
+      <section id="input-name">
+        <div class="input-name-container">
+          <h2>Choose your name</h2>
+          <label for="player-name">Player Name</label>
+          <input
+            type="text"
+            id="player-name"
+            maxlength="15"
+            required
+          />
+          <p id="error-message">Please Enter a valid name</p>
+          <div class="name-buttons">
+            <button class="buttons" id="cancel">Cancel</button>
+            <button class="buttons" id="submit" accesskey="--Enter">Confirm</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="game-result">
+        <h2>Hello</h2>
+        <p>Click "Start New Game" above, to start a new game!</p>
+      </section>
+
+      <!--Tictactoe Game Container-->
+      <section id="game-container">
+        <div id="turn-specifier">
+            <h4><strong id="player-turn"></strong>'s turn</h4>
+          </div>
+        <div id="box-container">
+          <!--Row One Boxes-->
+          <div class="box selected" id="row-one-one">
+            <p class="box-symbol"></p>
+          </div>
+
+          <div class="box" id="row-one-two">
+            <p class="box-symbol"></p>
+          </div>
+
+          <div class="box" id="row-one-three">
+            <p class="box-symbol"></p>
+          </div>
+
+          <!--Row Two Boxes-->
+          <div class="box" id="row-two-one">
+            <p class="box-symbol"></p>
+          </div>
+
+          <div class="box" id="row-two-two">
+            <p class="box-symbol"></p>
+          </div>
+
+          <div class="box" id="row-two-three">
+            <p class="box-symbol"></p>
+          </div>
+
+          <!--Row Three Boxes-->
+          <div class="box" id="row-three-one">
+            <p class="box-symbol"></p>
+          </div>
+
+          <div class="box" id="row-three-two">
+            <p class="box-symbol"></p>
+          </div>
+
+          <div class="box" id="row-three-three">
+            <p class="box-symbol"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

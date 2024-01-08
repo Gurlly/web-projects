@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+/*Text: font-family: 'Roboto Mono', monospace;*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --color1: #3498db;
+  --color2: #2ecc71;
+  --color3: #e74c3c;
+  --background-color: #ecf0f1;
+  --text-color: #273747;
+  --border-color: #bdc3c7;
+
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+  color: var(--#1e1f21);
+  background-color: var(--background-color);
+}
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: max-content;
+  padding: 2.5rem;
+  text-align: center;
+  background-color: var(--color3);
+  box-shadow: 2px 2px 3px var(--border-color);
+}
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+main {
+  width: 100%;
+  height: min-content;
+  padding: 4rem;
+  overflow-x: hidden;
+}
+main section {
+  width: 100%;
+  text-align: center;
+}
+#player-details {
+  width: fit-content;
+  margin: 0 auto 2.5rem auto;
+  display: flex;
+}
+.player-info {
+  width: 20rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.75rem;
+  margin-inline: 2rem;
+  background-color: var(--color1);
+  box-shadow: 1px 1px 2px var(--border-color);
+}
+.player-info h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.player-info h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.symbol {
+  font-size: 2.5rem;
+  margin-block: 0.75rem;
+}
+.edit-name {
+  width: fit-content;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font: inherit;
+  color: var(--background-color);
+  text-decoration: none;
+}
+.edit-name:hover {
+  text-decoration: underline;
+}
+
+#start-game {
+  width: 10rem;
+  padding: 0.5rem;
+  font: inherit;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color2);
+  cursor: pointer;
+  box-shadow: 1px 1px 2px black;
+}
+#start-game:hover {
+  color: var(--text-color);
+}
+
+/*Name Field Style*/
+#input-name {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.input-name-container {
+  width: 33rem;
+  padding: 1.5rem;
+  margin: 10rem auto 0 auto;
+  background-color: var(--background-color);
+  border-radius: 8px;
+}
+#input-name label {
+  font-size: 1rem;
+  margin: 0.5rem 0 0.75rem 0;
+  display: block;
+}
+#player-name {
+  width: 13.5rem;
+  padding: 0.2rem;
+  margin: 0 auto 0 auto;
+  font: inherit;
+  display: block;
+}
+.name-buttons {
+  width: fit-content;
+  margin: 1rem auto 0 auto;
+}
+#error-message {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: var(--color1);
+    display: none;
+}
+
+.buttons {
+  width: 5rem;
+  padding: 0.4rem;
+  margin-inline: 0.4rem;
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+#cancel {
+  color: var(--color3);
+  border: none;
+}
+#cancel:hover {
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+#submit {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--color3);
+}
+#submit:hover {
+  color: var(--color2);
+  font-weight: bold;
+}
+
+/*Styling the boxes*/
+#game-container {
+    width: fit-content;    
+    margin: 2rem auto 0 auto;
+    overflow: hidden;
+    display: none;
+} #box-container {
+    width: 23rem;
+    height: 23rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "box-one box-two box-three"
+    "box-four box-five box-six" 
+    "box-seven box-eight box-nine";
+    gap: 0.5rem;
+}
+
+#turn-specifier {
+    width: fit-content;
+    margin: 0 auto 1.5rem auto;
+    font-size: 1.15rem;
+}
+#player-turn {
+    color: var(--color2);
+}
+.box {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    background-color: rgb(229, 104, 90);
+    cursor: pointer;
+} 
+.box:hover {
+    background-color: rgba(231, 76, 60, 1);
+}
+.selected {
+    background-color: rgba(231, 76, 60, 1);
+    user-select: none;
+}
+.box-symbol {
+    font-size: 3.3rem;
+    user-select: none;
+    color: var(--background-color);
+    font-weight: bolder;
+}
+/*Ensuring all boxes are in place*/
+#row-one-one {
+    grid-area: box-one;
+}#row-one-two {
+    grid-area: box-two;
+}#row-one-three {
+    grid-area: box-three;
+}#row-two-one {
+    grid-area: box-four;
+}#row-two-two {
+    grid-area: box-five;
+}#row-two-three {
+    grid-area: box-six;
+}#row-three-one {
+    grid-area: box-seven;
+}#row-three-two {
+    grid-area: box-eight;
+}#row-three-three {
+    grid-area: box-nine;
+}
+
+
+/*Game Result design*/
+#game-result {
+    width: 45rem;
+    margin: 2rem auto 0 auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: var(--text-color);
+    text-align: center;
+    color: var(--background-color);
+    display: none;
+}
+#game-result h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+#game-result p {
+    font-size: 1.15rem;
+}
