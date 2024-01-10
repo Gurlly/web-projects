@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-slate-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="icon" href="/Pomodoro-Timer/resources/clock.ico" type="image/x-icon"/>
+
+    <!--Tailwind CSS-->
+    <link href="/Pomodoro-Timer/styles/output.css" rel="stylesheet" />
+
+    <!--JS-->
+    <script src="/Pomodoro-Timer/script/script.js" defer></script>
+  </head>
+  <body>
+    <header
+      class="w-full p-4 select-none bg-yellow-400 shadow-sm shadow-neutral-800"
+    >
+      <div class="w-f flex flex-row items-center">
+        <img
+          class="w-8 object-fit-cover"
+          src="/Pomodoro-Timer/resources/clock.png"
+        />
+        <h1 class="text-xl ml-3 font-mono font-bold tracking-wide">
+          Pomodoro Timer
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="w-11/12 h-80 max-w-lg p-7 lg:h-96 rounded-md mx-auto mt-16 border text-center bg-yellow-300 shadow shadow-slate-900"
+        id="timer-container"
+      >
+        <div class="flex justify-between">
+          <button
+            class="text-sm font-semibold px-2 py-1.5 bg-yellow-400 rounded-md shadow shadow-black"
+            id="pomodoro"
+          >
+            Pomodoro
+          </button>
+          <button class="text-sm font-semibold px-2 py-1.5" id="short-break">
+            Short Break
+          </button>
+          <button class="text-sm font-semibold px-2 py-1.5" id="long-break">
+            Long Break
+          </button>
+        </div>
+        <h2
+          class="text-center text-8xl my-8 font-mono font-bold lg:text-9xl"
+          id="countdown"
+        >
+          <span id="minutes">25</span>:<span id="seconds">00</span>
+        </h2>
+        <button
+          class="py-1.5 px-8 text-2xl uppercase bg-slate-100 rounded-md shadow-md shadow-slate-700"
+          id="start"
+        >
+          Start
+        </button>
+      </section>
+
+      <section class="w-11/12 max-w-lg mx-auto my-5 text-center" id="round">
+        <h3 class="text-gray-800">Round #<span>1</span></h3>
+        <div id="task">
+          <input
+            type="text"
+            name="goal"
+            id="task-goal"
+            class="w-full p-2 mt-5 rounded-md border-b border-b-black text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-300 text-center"
+            placeholder="Task Name"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
