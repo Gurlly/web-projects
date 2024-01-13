@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #0F0F0F;
+    background-color: #FFC3A1;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#calculator-container {
+    width: 100%;
+    max-width: 33rem;
+    height: 100%;
+    padding-inline: 1rem;
+    padding-block: 3rem;
+    background-color: #0F0F0F;
+}
+
+#input {
+    width: 100%;
+    height: 12rem;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    font-family: inherit;
+    font-size: 2rem;
+    resize: none;
+    background-color: #FAF0E6;
+}
+#functions {
+    width: 100%;
+    height: 28rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'one two three plus'
+    'four five six minus'
+    'seven eight nine divide'
+    'reset zero equal multiply';
+    gap: 0.7rem;
+}
+
+button {
+    font-size: 2rem;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: #FAF0E6;
+}
+button:hover {
+    background-color: #ccc1b6;
+}
+#one {
+    grid-area: one;
+}
+#two {
+    grid-area: two;
+}
+#three {
+    grid-area: three;
+}
+#four {
+    grid-area: four;
+}
+#five {
+    grid-area: five;
+}
+#six {
+    grid-area: six;
+}
+#seven {
+    grid-area: seven;
+}   
+#eight {
+    grid-area: eight;
+}
+#nine {
+    grid-area: nine;
+}
+#zero {
+    grid-area: zero;
+}
+#reset {
+    grid-area: reset;
+}
+#minus {
+    grid-area: minus;
+}
+#plus {
+    grid-area: plus;
+}
+#multiply {
+    grid-area: multiply;
+}
+#divide {
+    grid-area: divide;
+}
+#equals {
+    grid-area: equal;
+}
+
+@media screen and (min-width: 530px) {
+    body{
+        padding-block: 1rem;
+    }
+    #calculator-container {
+        margin: 0 auto;
+    }
+    #input {
+        height: 11rem;
+    }
+    #functions {
+        height: 27rem;
+    }
+}
